@@ -1,14 +1,35 @@
-## Kubernetes Deployment
+# 🚀 DevOps Internship Final Assignment
 
-This app is deployed using a single-node `k0s` Kubernetes cluster.
+This is a beginner-friendly DevOps project created as part of the **VMware DevOps Internship**. The project includes building a simple Flask web application, containerizing it with Docker, automating deployment with GitHub Actions, and deploying it to Kubernetes using **k0s**.
 
-### Setup k0s cluster
+---
+
+## 📋 Project Overview
+
+This project demonstrates the end-to-end DevOps lifecycle:
+
+- ✅ Flask Web App Development
+- ✅ Docker Containerization
+- ✅ Continuous Integration with GitHub Actions
+- ✅ Kubernetes Deployment using k0s
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool            | Purpose                             |
+|-----------------|-------------------------------------|
+| Python + Flask  | Backend Web Application             |
+| Docker          | Containerization                    |
+| GitHub Actions  | Continuous Integration Pipeline      |
+| Kubernetes (k0s)| Container Orchestration             |
+
+---
+
+## 💻 Run the App Locally
+
+### 1. Clone the Repository
 
 ```bash
-curl -sSLf https://get.k0s.sh | sudo sh
-sudo k0s install controller --single
-sudo k0s start
-sudo k0s kubeconfig admin > ~/.kube/config
-chmod 600 ~/.kube/config
-kubectl get nodes
-
+git clone https://github.com/YOUR_USERNAME/devops-app.git
+cd devops-app
